@@ -5,27 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
+        body, html {
             margin: 0;
             padding: 0;
         }
-        body {
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
             width: 100%;
             text-align: center;
             background-color: black;
         }
         img {
-            width: 50%;
+            height: 100vh;
+            vertical-align: middle;
         }
 
         @media (max-width: 992px) {
             img {
                 width: 100%;
+                height: auto;
             } 
         }
     </style>
 </head>
 <body>
-    <img src="Sagra-2024.jpg">
+    <div class="container">
+        <img src="Sagra-2024.jpg">
+    </div>
 </body>
 </html>
